@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: '/private/',
     },
-    sitemap: '/sitemap.xml',
+    sitemap: 'https://builder-next-next-ui.vercel.app/sitemap.xml',
   }
 }
