@@ -1,6 +1,7 @@
 // components/BuilderImage.tsx
 import { Image } from "@nextui-org/image";
 import { ImageProps } from "@nextui-org/image";
+import NextImage from "next/image";
 
 interface BuilderImageProps extends ImageProps {
   // Add any additional custom props if needed
@@ -29,6 +30,7 @@ const BuilderImage: React.FC<BuilderImageProps> = ({
 }) => {
   return (
     <Image
+      as={NextImage}
       src={image}
       srcSet={srcset}
       sizes={sizes}
