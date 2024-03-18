@@ -1,6 +1,7 @@
 "use client";
 import { builder, Builder } from "@builder.io/react";
 import Counter from "./components/Counter/Counter";
+import BuilderImage from "@/components/BuilderImage"
 
 builder.init(process.env.NEXT_PUBLIC_BUILDER_API_KEY!);
 
@@ -12,4 +13,9 @@ Builder.registerComponent(Counter, {
       type: "number",
     },
   ],
+});
+
+Builder.registerComponent(BuilderImage, {
+  name: 'Image', // The same name you used in Builder.io
+  override: true,
 });
