@@ -22,7 +22,7 @@ Builder.registerComponent(BuilderImage, {
     // Add any custom inputs if needed, repeating standard ones
     { name: 'image', type: 'file' },
     { name: 'backgroundPosition', type: 'string' },
-    { name: 'lazy', type: 'string' },
+    { name: 'lazy', type: 'boolean' },
     { name: 'fitContent', type: 'boolean' },
     { name: 'aspectRatio', type: 'number' },
     { name: 'lockAspectRatio', type: 'boolean' },
