@@ -20,6 +20,7 @@ Builder.registerComponent(BuilderImage, {
   override: true,
   inputs: [
     // Add any custom inputs if needed
-    { name: 'lazy', type: 'boolean' }
+    { name: 'lazy', type: 'boolean'},
+    { name: 'image', type: 'file' }
   ],
 });
