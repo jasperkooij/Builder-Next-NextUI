@@ -19,8 +19,16 @@ Builder.registerComponent(BuilderImage, {
   name: 'Image', // The same name you used in Builder.io
   override: true,
   inputs: [
-    // Add any custom inputs if needed
-    { name: 'lazy', type: 'boolean'},
-    { name: 'image', type: 'file' }
+    // Add any custom inputs if needed, repeating standard ones
+    { name: 'image', type: 'file' },
+    { name: 'backgroundPosition', type: 'string' },
+    { name: 'lazy', type: 'string' },
+    { name: 'fitContent', type: 'boolean' },
+    { name: 'aspectRatio', type: 'number' },
+    { name: 'lockAspectRatio', type: 'boolean' },
+    { name: 'height', type: 'number' },
+    { name: 'width', type: 'number' },
+    { name: 'altText', type: 'string' },
+    { name: 'className', type: 'string' }
   ],
 });
