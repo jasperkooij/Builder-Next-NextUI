@@ -17,5 +17,9 @@ Builder.registerComponent(Counter, {
 
 Builder.registerComponent(BuilderImage, {
   name: 'Image', // The same name you used in Builder.io
-  override: false,
+  override: true,
+  inputs: [
+    // Add any custom inputs if needed
+    { name: 'lazy', type: 'boolean' }
+  ],
 });
